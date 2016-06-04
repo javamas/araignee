@@ -1,0 +1,24 @@
+apply {
+    plugin 'java'
+    plugin 'idea'
+    plugin 'eclipse'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    testCompile 'junit:junit:4.+'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.13'
+    distributionUrl = 'http://services.gradle.org/distributions/gradle-2.13-all.zip'
+}
