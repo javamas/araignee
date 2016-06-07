@@ -36,3 +36,7 @@ gradle-app.setting
 .idea
 *.iml
 
+/bin/
+.classpath
+.project
+.settings/
