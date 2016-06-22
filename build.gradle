@@ -2,6 +2,7 @@ apply {
     plugin 'java'
     plugin 'idea'
     plugin 'eclipse'
+    plugin 'checkstyle'
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -19,6 +20,10 @@ dependencies {
     compile group: 'com.rabbitmq', name: 'amqp-client', version: '2.3.1'
     compile 'com.fasterxml.jackson.core:jackson-databind:2.3.4'
     
+}
+
+checkstyle {
+    toolVersion = '6.19'
 }
 
 task wrapper(type: Wrapper) {
